@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.41 42.05">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #e9e8ee;
+        font-family: Margin-DEMO, 'Margin DEMO';
+        font-size: 33.3px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        fill: #3c153b;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #9390ad;
+        opacity: .8;
+      }
+    </style>
+  </defs>
+  <g id="arrows">
+    <g>
+      <g>
+        <polygon class="cls-4" points="109.19 10.58 99.98 .08 .02 0 0 41.97 99.96 42.05 109.18 31.56 118.41 21.08 109.19 10.58"/>
+        <polygon class="cls-5" points="109.19 10.58 99.98 .08 .02 0 0 41.97 99.96 42.05 109.18 31.56 118.41 21.08 109.19 10.58"/>
+      </g>
+      <text class="cls-2" transform="translate(13.77 31.9)"><tspan class="cls-6" x="0" y="0">B</tspan><tspan class="cls-3" x="15.95" y="0">A</tspan><tspan class="cls-1" x="34.8" y="0">C</tspan><tspan class="cls-7" x="51.41" y="0">K</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,172 @@
+//colors
+$bg_purple: #3C153B;
+$dark_purple: #592059;
+$light_purple: #9390AD;
+$stand_red: #EB5270;
+$stand_green: #77C688;
+$stand_blue: #507CAD;
+$stand_brown: #BF936B;
+$menu_dark_blue: #385977;
+$white: #E9E8EE;
+$grey: #807E96;
+
+//sizes
+$starting_title: 1.8rem;
+$about_title: 6rem;
+$page_title: 1.8rem;
+$btn_big: 2.5rem;
+$btn_medium: 2rem;
+$btn_small: 1.3rem;
+$stand_sign: 3.2rem;
+$practice_small: 1.05rem;
+
+// fonts
+$Margin: Margin;
+$Rubik_light: Rubik-Light;
+$Rubik_Regular: Rubik-Regular;
+$Rubik_Medium: Rubik-Medium;
+// $Rubik_SemiBold: Rubik-SemiBold;
+$Rubik_Bold: Rubik-Bold;
+$Rubik_ExtraBold: Rubik-ExtraBold;
+$Rubik_Black: Rubik-Black;
+
+@font-face {
+    font-family: Margin;
+    src: url(../assets/fonts/margin/MarginDEMO.otf);
+}
+
+@font-face {
+    font-family: Rubik-Light;
+    src: url(../assets/fonts/Rubik/static/Rubik-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../assets/fonts/Rubik/static/Rubik-Regular.ttf);
+    font-weight: 1 1000;
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../assets/fonts/Rubik/static/Rubik-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(../assets/fonts/Rubik/static/Rubik-Bold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Rubik-ExtraBold;
+    src: url(../assets/fonts/Rubik/static/Rubik-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: Rubik-Black;
+    src: url(../assets/fonts/Rubik/static/Rubik-Black.ttf);
+    font-weight: 900;
+}
+
+// animations
+@keyframes growTitleBtn0Ani {
+    from { width: 18%; }
+    to { width: 25%; }
+}
+$growTitleBtn0Ani: growTitleBtn0Ani;
+
+@keyframes growTitleBtn1Ani {
+    from { width: 12%; }
+    to { width: 17%; }
+}
+$growTitleBtn1Ani: growTitleBtn1Ani;
+
+@keyframes hotAirBalloonAni {
+    0% { 
+        top: 8%;
+        left: 90%; 
+    } 25% { 
+        top: 12%;
+        left: 80%; 
+    } 50% { 
+        top: 15%;
+        left: 55%; 
+    } 75% { 
+        top: 5%;
+        left: 75%; 
+    } 100% { 
+        top: 8%;
+        left: 90%; 
+    }
+}
+$hotAirBalloonAni: hotAirBalloonAni;
+
+@keyframes cloudAni {
+    0% { 
+        top: 2%;
+        left: -15%; 
+    } 15% { 
+        top: 5%;
+        left: 30%; 
+    } 50% { 
+        top: -2%;
+        left: 115%; 
+    } 70% { 
+        top: 3%;
+        left: 45%; 
+    } 100% { 
+        top: -20%;
+        left: -15%; 
+    }
+}
+$cloudAni: cloudAni;
+
+@keyframes rotateAni {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+	}
+	100% {
+        transform: rotate(360deg);
+	}
+}
+$rotateAni: rotateAni;
+
+@keyframes littleArrowBottom {
+    0% {
+        top: 80.5%;
+    }
+    50% {
+        top: 82%;
+	}
+	100% {
+        top: 80.5%;
+	}
+}
+$littleArrowBottom: littleArrowBottom;
+
+@keyframes littleArrowTop {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: 2%;
+	}
+	100% {
+        top: 0%;
+	}
+}
+$littleArrowTop: littleArrowTop;
+
+@keyframes littleArrowLeft {
+    0% {
+        left: 15%;
+    }
+    50% {
+        left: 13%;
+	}
+	100% {
+        left: 15%;
+	}
+}
+$littleArrowLeft: littleArrowLeft;

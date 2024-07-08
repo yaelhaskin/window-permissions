@@ -1,0 +1,86 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+}
+
+.TextNav {    
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    z-index: 1;
+
+    .title {
+        font-size: 1.7rem;
+        position: relative;
+        align-self: baseline;
+    }
+
+    .dotsContainer {
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    .dots {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dot {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-left: 30px;
+        border-radius: 50%;
+        background-color: scss.$white;
+        opacity: 30%;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .fullOpacity {
+        opacity: 100%;
+    }
+    
+    .arrowArea {
+        width: 5vw;
+        cursor: pointer;
+    }
+
+    .littleArrow {
+        width: 1.3vw;
+        margin: 0 2vw;
+        align-self: flex-end;
+    }
+    
+    .arrowAreaRight {
+        transform: scaleX(-1);
+    
+        &:hover {
+            transform: scaleX(-1) translateX(-20%);
+        }
+    }
+    
+    .arrowAreaLeft {
+        &:hover {
+            transform: translateX(-20%);
+        }
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .TextNav {
+        width: 70%;
+        .dot {
+            width: 1.1vw;
+            height: 1.1vw;
+            margin-left: 25px;
+        }
+        .littleArrow {
+            width: 1vw;
+        }
+    }
+}

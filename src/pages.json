@@ -1,0 +1,602 @@
+{
+    "pages": [
+        {
+            "name": "Title",
+            "bgAnimations": ["ferrisWheel", "rollerCoaster"],
+            "arrows": {
+                "back": false,
+                "front": false,
+                "type": "wood"
+            },
+            "title": "Start",
+            "text": ["Start"]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["rollerCoaster"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "",
+            "text": ["ברוכים הבאים ללונה פארק!\nבלומדה זו נלמד כיצד עובדות הרשאות במערכת ההפעלה-windows, ולאחר מכן גם על הרשאות מסוג NTFS, הרשאות מסוג SHARE ועל השילוב ביניהן.\n\nבכל שלב בלומדה, אם תרצו לנווט לכלל החומר שמוצג בה תוכלו ללחוץ על כפתור ה-Menu.\nבנוסף, בדוגמאות ותרגולים תוכלו להתייחס לתמונה שמוצגת בלומדה כלמערכת קבצים במחשב, ולעשות עליה את הפעולות המבוקשות (כגון קליק ימני וכו').\n\nבהצלחה ותהנו!!\n"]
+        },
+        {
+            "name": "Map",
+            "bgAnimations": ["carousel"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "text": ["לאיזה חלק בלונה פארק תרצו להגיע?"]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["rollerCoaster"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "file system",
+            "text": ["לפני שנצלול לנושא ההרשאות נצטרך להבין מהי מערכת קבצים.\nמערכת קבצים (מ”ק) היא שיטה לארגון וסידור כל המידע שנמצא ברכיבי האחסון של המחשב. כל פעם שצריך לפתוח קובץ מסוים, מערכת ההפעלה נעזרת במערכת הקבצים כדי לדעת לאן לגשת באזור האיחסון.", "יש סוגי שונים של מערכות קבצים:\n1. (File Allocation Table) FAT - מכילה: מיקום לוגי, מיקום פיזי ותאריך שינוי אחרון.\n2. NTFS (New Technology File System) - מכילה: מיקום לוגי, מיקום פיזי, תאריך שינוי אחרון, הרשאות ובעלים.\n\nNTFS באה לשדרג את FAT כי נותנת את היכולת להשתמש בהרשאות ובעלות על קבצים.​"]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["rollerCoaster"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "",
+            "titleSwitch": ["Metadata (טבלת המיקום) :", "הרשאה (permission) :"],
+            "text": ["המידע על המידע, כל המידע שידוע על הקובץ (שם, גודל, מיקום פיזי וכדומה) נשמר ומשמש כ-Metadata. מ\"ק אחראית על איזה Metadata ישמר ואיפה." , "שדה במ\"ק המציין את הגישה ואופן השימוש של משתמשים עבור משאבים. בעזרת הרשאה אפשר לבחור מה יהיו הפעולות שמשתמש יכול לעשות על קובץ ספציפי. כך אפשר למנוע גישה לא רצויה של גורמים לקבצים ותיקיות."]
+        },
+        {
+            "name": "Animation",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "title": "seniors",
+            "text": ["קבוצה של אנשים מבוגרים הגיעו ללונה פארק להנות. הם נכנסו למתקן המפחיד ביותר, וכשיוצאו ממנו הם היו מאוד מסוחררים ולא הרגישו טוב, אחד אפילו נופל!", "מהמקרה אפשר להבין שלפעמים צריך לשים הגבלות והרשאות על מתקנים מסויימים כדי שלא יקרו אסונות (במקרה הזה הגבלת גיל), ובדומה לכך גם על קבצים במחשב שלנו."]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["rollerCoaster"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "",
+            "text": ["אז כמו שהבנו, חשוב לתת הרשאות ולהגביל גישה לקבצים ותקיות במערכת הקבצים שלנו. בהמשך הלומדה נלמד על סוגים שונים של הרשאות."]
+        },
+        {
+            "name": "Map",
+            "bgAnimations": ["carousel"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "text": ["לאיזה חלק בלונה פארק תרצו להגיע?"]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "הרשאות NTFS",
+            "text": ["כחלק משימוש במ\"ק מסוג NTFS נוכל לתת הרשאות על קבצים, תיקיות ומדפסות.​ שדה במערכת הקבצים המציין את הגישה ואופן השימוש של משתמשים או קבוצות עבור משאבים במחשב. ניתן לתת הרשאות על קבצים, תיקיות ומדפסות. בלי הרשאת NTFS נכונות לא נוכל לגשת למשאב!\nהרשאות NTFS יחולו על משתמשים מקומיים או על ארגונים שיתחברו למחשב בצורה ישירה ומרוחקת. לא מדובר על שיתוף תיקיות או קבצים ואז נתינת ההרשאות עליהם, ואין שום קשר לשיתופים כרגע.", "בשימוש ב-NTFS נוספת עמודת הרשאות ל-metadata, בעזרתה אפשר להגדיר כבר בטבלת ההרשאות מי יכול לגשת לקובץ המדובר.\nשדה ההרשאות נקרא ACL – Access Control List, והוא מציין את אופן השימוש שניתן למשתמשים וקבוצות עבור משאבים, גם ב-Domain וגם במחשב המקומי.\n\nהיתרון הגדול ביותר של מערכת קבצים NTFS הוא שניתן לתת הרשאות ובעלות על המידע עצמו."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "סוגי הרשאות",
+            "text": ["נוכל להגדיר סוגים שונים של גישות למשאב על ידי סוגי הרשאות שונים.\nיש שישה סוגים עיקריים של הרשאות: List, Read, Read&Execute, Write, Modify, Full Control.\n(אותם ניתן לראות בלחיצה על החץ שבדוכן למטה)\n\nחשוב לציין שקיימות גם הרשאות מיוחדות שלא מצויינות ברשימה המוצגת.\nהרשאות אלו מאפשרות לתת הרשאות לביצוע פעולות ספציפיות יותר על המשאב. לרוב לא משתמשים בהרשאות המיוחדות בצבא, מכיוון שההרשאות הסטנדרטיות עונות על כל הצרכים הקיימים."],
+            "pop-up": "permission-types"
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "מצבי הרשאות",
+            "text": ["לכל הרשאה קיימים 3 מצבים:\n1) Allow- מאפשר את ההרשאה.\n2) Deny- חוסם את ההרשאה לחברי הקבוצה, גם אם הם בעלי הרשאת גישה מטעם קבוצה אחרת.\n3)לא לתת הרשאה בכלל- חוסם את ההרשאה לחברי הקבוצה שאין לה הרשאה. אם משתמש חבר בקבוצה נוספת בעלת ההרשאה הנכונה תתאפשר לו גישה למשאב.", "לעולם לא נשתמש ב-Deny, ניתן הרשאות של Allow או שלא ניתן הרשאות בכלל!\n זאת כדי לא לגרום למצב שבו משתמש חבר בשתי קבוצות ועל אחת מהן יש לו הרשאת Deny. כך נוצרת התנגשות הרשאות והמשתמש לא יוכל לגשת לאובייקט.\n\nנציין שכן יש מקרים מסויימים בהם בכל זאת ניתן הרשאת Deny למשתמש מסויים, אך מקרים אלו נדירים וקיימים רק כשאנחנו יודעים שנרצה לחסום גישה למשתמש ספציפי."]
+        },
+        {
+            "name": "Animation",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "title": "food",
+            "text": ["ליאור רוצה לקנות פרוסת עוגה לנשנוש של אחר הצהריים, דבר שהיא עושה באופן קבוע, אבל כשקנתה את הכרטיס לפארק לא לא ציפתה שתהיה רעבה ולא קנתה כניסה למתחם האוכל. לכן היא לא תוכל לקנות את פרוסת העוגה שרצתה.", "מהמקרה אפשר להבין שאם אין לנו הרשאה מקיפה מתאימה (במקרה של ליאור להיכנס למתחם האוכל), לא נוכל לעשות את הפעולה שברגיל היינו יכולים (לקנות את פרוסת העוגה)."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "ירושת הרשאות",
+            "text": ["ירושת (או חלחול) הרשאות הוא מצב בו ההרשאות הקיימות על תיקיית האב מועברות גם לכל התיקיות והקבצים שמתחתיה.​"],
+            "rightClick": "ntfsInheritance"
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "הסרה של ירושת הרשאות",
+            "text": ["קיימות שתי דרכים לביטול ירושת הרשאות:\n1)Convert- ההרשאות הקיימות על המשאב יישארו, ונוכל לערוך אותן.\n2)Remove- ההרשאות הקיימות יימחקו לגמרי, ונוכל להוסיף הרשאות חדשות.\nיש אפשרות גם להגדיר לתיקיה שתוריש בכוח את ההרשאות שיש עליה לכל האובייקטים שקיימים תחתיה."],
+            "rightClick": "ntfsInheritanceRemove"
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "נתינת הרשאות AGP",
+            "text": ["ניתן הרשאות בעזרת אסטרטגיית AGP - Account, Group, Permissions.\nAccount – נבחר וניצור (אם צריך) את המשתמשים שלהם נרצה לתת הרשאות.\nGroup – נאגד משתמשים לפי קבוצות של מכנים משותפים.\nPermissions – ניתן הרשאה לקבוצה שיצרנו, בגלל שלכל החברים בה מתאימה אותה הרשאה.", "שימוש בשיטה זו מייעלת את תהליך מתן ההרשאות. במקום לתת הרשאה להמון משתמשים נפרדים, ניתן את ההרשאה לקבוצה המכילה משתמשים בעלי מכנים משותפים שלכולם היא רלוונטית. משתמש יכול להיות שייך לכמה קבוצות ועל כל קבוצה נוכל להגדיר הרשאות שונות."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "Effective Permissions",
+            "text": ["יש מצבים בהם משתמש מסויים חבר בכמה קבוצות שונות, בעלות הרשאות שונות לאותו הקובץ.\nבעזרת הכלי effective permissions אפשר לראות איזה הרשאות יש למשתמש במצב זה (מצב של שילוב הרשאות NTFS).\nכדי לראות אילו הרשאות יש למשתמש במצב של שילוב הרשאות, נלך ל:\nProperties -> Security -> Advanced -> Effective Permissions -> Select\nונבחר את המשתמש הרצוי.", "חשוב לציין, כשמדובר ברשת ארגונית הפיצ'ר View effective access לא תמיד יציג לנו מידע נכון ומדויק ועלול להטעות אותנו. לכן כן נעדיף לרוב לא להסתמך עליו ו\"לחשב\" את ההרשאות הסופיות של המשתמש בעזרת ההיכרות שלנו עם התנגשות הרשאות."],
+            "rightClick": "effectivePermissions"
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "כפיית הורשה",
+            "text": ["קיימת אפשרות להוריש הרשאות בכוח על כל האובייקטים שנמצאים מתחת לתקייה מסויימת.\nProperties -> Security -> Advanced RC -> Replace all child object permission entries with inheritable permission entries from this object"]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "קריאת הרשאות",
+            "text": ["כל משאב יכול לקבל הרשאות בשתי דרכים:\nExplicit Permissions – הרשאות שהמשאב קיבל ישירות (לא בירושה).\nInherited Permission– הרשאות שהמשאב קיבל בירושה מתיקיית אב כלשהי.\nהרשאת Explicit יותר חזק מהרשאת Inherited-לכן, אם הרשאת ה-Deny מורשת מתיקיית אב כלשהי, וניתנה הרשאת Allow על המשאב הספציפי, ה-Allow יתפוס.\n(לחצו על החץ שבדוכן כדי לראות את סדר קריאת ההרשאות על ידי מערכת הקבצים)."],
+            "pop-up": "readOrder"
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "העתקה והעברה של קבצים",
+            "text": ["כדי להעתיק קבצים או ספריות צריך הרשאת Write Allow בספריית היעד,\nוכדי להעביר קבצים או ספריות צריך הרשאה של Allow Modify בספריית המקור.\n\nמשתמש שמעתיק ספרייה או קובץ הופך להיות הבעלים של ההעתק.\n(לחצו על החץ שבדוכן כדי לראות טבלה שמסכמת האם קובץ יורש הרשאות בהעתקה והעברה).\n\n*קבצים וספריות שמועברות לכונן FAT מאבדים בכלל את הרשאותיהם,\nכי FAT לא תומכת בהרשאות NTFS."],
+            "pop-up": "copyAndMove"
+        },
+        {
+            "name": "Animation",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "title": "keys",
+            "text": ["נועם הפעיל דוכן בפארק אבל החליט להתפטר וללכת לטייל בעולם. כשעזב נעל את הדוכן ולקח איתו את המפתח היחיד. מנהל הפארק אמיר היה צריך לשבור ולהחליף את המנעול כדי לפתוח שוב את הדוכן, ולתת את המפתח החדש לעובד אחר.", "נשווה את הדוכן לתקייה במחשב. לנועם היו הרשאות מסויימות, וכשהלך, אמיר (שיש לו בעלות), שינה את המנעול ונתן את ההרשאות למישהו אחר."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "NTFS",
+            "title": "בעלות",
+            "text": ["Owner - כל מי שיוצר משאב בכונן NTFS. בעל הקובץ ובעל הרשאות מלאות על הקובץ.\nלקיחת בעלות על משאב תתבצע בצורה הבאה:\nProperties -> Security -> Advanced -> Owner -> Edit\n ואז לחיצה על אופציית קביעת הבעלות.\nלאחר קביעת בעלות, בעל הקובץ מקבל הרשאות מלאות על הקובץ.", "Administrators- החברים בקבוצה זו הם כל יכולים. הם תמיד יכולים לקחת בעלות על כל קובץ במערכת ההפעלה, ולאחר מכן לשנות לו את ההרשאות.\n\nOwner של קובץ תמיד יכול לשנות את כל ההרשאות על הקובץ,\nו-Administrators תמיד יכול לקחת בעלות על כל קובץ."]
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "text": ["מלאו את הטבלה של סוגי הרשאות לפי הפעולות שיכולה לעשות כל פקודה:"],
+            "dnd": "על קובץ:"
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "text": ["מלאו את הטבלה של סוגי הרשאות לפי הפעולות שיכולה לעשות כל פקודה:"],
+            "dnd": "על תקייה:"
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "text": ["שנו את ההרשאות על הקובץ File.txt ככה שהמשתמש Permissions user יוכל רק לקרוא ולכתוב אליו"],
+            "rightClick": "ntfsPractice"
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "NTFS",
+            "text": ["איזה הרשאה היא החזקה ביותר?"],
+            "select": {
+                "questions": [
+                    ["הרשאת Allow read שמוחלת ישירות על הקובץ", "הרשאת deny read שמורשת מתיקיית האב"],
+                    ["הרשאת Allow fc שמוחלת ישירות על הקובץ", "הרשאת deny fc שמוחלת ישירות על הקובץ"],
+                    ["הרשאת Allow fc שמורשת מתיקיית האב", "הרשאת Allow Modify שמוחלת ישירות על הקובץ"],
+                    ["הרשאת Allow modify שמוחלת ישירות על הקובץ", "הרשאת Allow read שמוחלת ישירות על הקובץ"]
+                ],
+                "followQuestion": "",
+                "correctAnswer": ["הרשאת Allow read שמוחלת ישירות על הקובץ", "הרשאת deny fc שמוחלת ישירות על הקובץ", "הרשאת Allow fc שמורשת מתיקיית האב", "הרשאת Allow modify שמוחלת ישירות על הקובץ"]
+            }
+        },
+        {
+            "name": "Map",
+            "bgAnimations": ["carousel"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "text": ["לאיזה חלק בלונה פארק תרצו להגיע?"]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "SHARE",
+            "title": "הרשאות SHARE",
+            "text": ["יהיו מקרים בהם נרצה לשתף משאב מסויים לעוד אנשים, בלי לשלוח להם את המשאב ישירות. במקרים אלו ניתן לשתף את המשאב בשיתוף רשתי, מה שנותן לאחרים לגשת אליו ישירות בצורה מרוחקת ויעילה. לשיתוף בצורה רשתית יהיו עוד הרשאות מלבד ההרשאות NTFS (שחלות מראש), הרשאות אלו נקראות הרשאות SHARE."]
+        },
+        {
+            "name": "Animation",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "SHARE",
+            "title": "giftShop",
+            "text": ["תומר מסתובב עם דוכן מזכרות ברחבי הפארק ומנסה למכור מתנות לילדים. פעולה זו דורשת ממנו הרבה כוחות והיא לא מאוד יעילה, ולכן החליט הפארק לפתוח חנות מזכרות שאליה יבואו כולם במקום.", "בדומה למקרה, במקום שניתן הרשאות באופן ידיני לכל משתמש שרוצה לגשת למשאב במחשב שלנו (כמו שתומר הביא את המזכרות לכל אחד), נוכל לשתף את המשאב שלנו ברשת וכך כל מי שירצה לגשת אליו יוכל (כמו פתיחת חנות המזכרות)."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "SHARE",
+            "title": "סוגי הרשאות",
+            "text": ["בדומה להרשאות NTFS, יש סוגים שונים של הרשאות SHARE שניתן לתת לקובץ מסויים:\n\nRead – מאפשר לקרא את הספרייה ואת כל האובייקטים שנמצאים בה.\nChange – כל מה שהרשאת Read כוללת, ובנוסף את האפשרות לכתוב, לשנות ולמחוק את האובייקטים שנמצאים בספרייה.\nFull Control – כל מה שהרשאת Change כוללת, ובנוסף את האפשרות לשנות הרשאות ולקחת בעלות על האובייקטים שבתוך הספרייה המשותפת."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "SHARE",
+            "titleSwitch": ["יצירת שיתוף", "גישה לשיתוף"],
+            "text": ["יש שתי דרכים ליצור שיתוף חדש של ספרייה:\n1. Properties -> Sharing-> Advanced Sharing-> Share this folder\n2.דרך ה-CMD, באמצעות הפקודה:  folderpath -> net share {sharename}", "יש שתי דרכים לגשת לשיתוף של ספרייה:\n1. גישה זמנית- דרך נתיב ה-UNC (שלמדנו עליו בשיעור גישה מרחוק) בשורת ה-run.\n2. גישה קבועה- מיפוי השיתוף לכונן בצורה גרפית או בצורה קריקטריאלית\n(כמו שלמדנו בשיעור גישה מרחוק). שיטה זו היא יותר מהירה ונוחה,\nובעזרתה נמנע מלהכניס נתיב UNC בשורת ה-run בכל פעם מחדש.\n\nדרך ה-CMD, באמצעות הפקודה: net use device: \\UNCpath"]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "SHARE",
+            "title": "ירושת הרשאות",
+            "text": ["ברגע שנשתף תיקייה בהרשאה, ההרשאה תחלחל לכל התיקיות תחתיה (כמו הרשאות NTFS).\n לעומת הרשאות NTFS, בהרשאות SHARE אין דרך לשנות או לבטל את ירושה זו!"]
+        },
+        {
+            "name": "Animation",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "SHARE",
+            "title": "bushes",
+            "text": ["לענבר אין מתקן ספציפי בלונה פארק שרוצה ללכת אליו, היא מסתובבת ולא מוצאת את עצמה. לעומת זאת, אמיר מנהל הפארק מכיר את הפארק טוב, ויודע בדיוק לאן רוצה להגיע. לכן, כשמנסה לגשת לשיחים נפתחת לו דרך מעבר.", "לפעמים מבחינה אבטחתית לא נרצה שלכל האנשים ברשת תהיה גישה לשיתופים שלנו, אלא רק לאנשים שרוצים להגיע אליהם ומכירים את הנתיב הנכון (כמו שלאמיר היה מעבר בשיחים כי ידע לאן הוא הולך, אך לענבר לא היה)."]
+        },
+        {
+            "name": "Stand",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "plain"
+            },
+            "standType": "SHARE",
+            "titleSwitch": ["שיתוף חבוי", "שיתוף אדמיניסטרטיבי"],
+            "text": ["שיתוף שלא ניתן לגשת אליו ללא נתיב ה-UNC המדויק שלו. נוצר על ידי הוספת $ בסוף שם השיתוף.\n\nכדי לגשת לשיתוף חבוי:\nנכתוב בשורת ה-run את נתיב ה-UNC המלא עם סימון ה-$ בסוף שם השיתוף (בצורה גרפית).\nאו\nנשתמש בפקודת net use עם שימוש $ בנתיב ה-UNC (בצורה קריקטריאלית).", "שיתופים חבויים דיפולטיים שמשמשים את מנהלי המערכת לניהול מרוחק (לרוב יכללו את כונן C, ותיקיית אדמין)."]
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "standType": "SHARE",
+            "text": ["תנו הרשאות שיתוף על התיקייה כך שכל מי שמתחבר אליה דרך שיתוף יוכל לשנות את תוכנה, לקרוא ולכתוב"],
+            "rightClick": "sharePractice"
+        },
+        {
+            "name": "Map",
+            "bgAnimations": ["carousel"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "text": ["לאיזה חלק בלונה פארק תרצו להגיע?"]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "השוואת הרשאות",
+            "text": [""],
+            "img": "compareGraph"
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["tent"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "התנגשות הרשאות",
+            "text": ["כדי לגשת לקובץ או תיקייה בצורה מרוחקת, צריך הרשאת שיתוף וגם את הרשאת ה-NTFS. לכן כאשר נשתף תיקייה בצורה רשתית יחולו עליה גם הרשאות NTFS וגם הרשאות Share, ונוצר מצב של התנגשות הרשאות.\n\nבמצב של התנגשות הרשאות, ההרשאה המגבילה ביותר תהיה ההרשאה הקובעת. כלומר ההרשאה הכי מחמירה (זו שמאפשרת הכי פחות) תופעל על המשאב."]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["tent"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "התנגשות הרשאות - סדר הרשאות",
+            "text": ["כשאנחנו ניגשים לשיתוף באופן מרוחק, אנחנו עוברים \"2 רמות\":\n\nהראשונה, רמת הרשאות SHARE.\nרמה זו תקבע האם בכלל אפשר לגשת לשיתוף. במידה וההרשאה תהיה deny, לא יתאפשר לגשת לשיתוף ולא נגיע לרמה השנייה.\n\nהשנייה, רמת הרשאות NTFS.\nאחרי הרשאת השיתוף, ניגש למערכת הקבצים של המחשב האחר, שבה חלות הרשאות NTFS. לכן, גם אם קיימת הרשאה וגישה לשיתוף, אם לא תהיה הרשאה נכונה במערכת הקבצים, המצב יהיה מקביל ל-deny ולא ניתן יהיה לגשת למשאב."]
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["tent"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "התנגשות הרשאות - שילוב הרשאות",
+            "text": [""],
+            "img": "clashFlowChart"
+        },
+        {
+            "name": "Intro",
+            "bgAnimations": ["tent"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "title": "התנגשות הרשאות - עבודה נכונה",
+            "text": ["1. ניצור עץ תיקיות עם המשאבים שנרצה לשתף.\n2. נשתף את התיקייה הראשית בעץ.\n3. הקבוצה Everyone תקבל הרשאת Share-FC.\n4. כדי לתת הרשאות ספציפיות על התיקיות שמתחת לראשית, נשתמש בהרשאות NTFS.\n\nחשוב: לא ננהל הרשאות דרך הרשאות SHARE, אלא דרך הרשאות NTFS.\n\nבעת התנגשות תחול ההרשאה המחמירה ביותר ולכן זה לא משנה אם ניתן הרשאות FC בשיתוף לכולם, כי ההרשאה ברמת ה-NTFS תגביל את ההרשאה.", "למה לא נעבוד הפוך:\n\n1. הרשאות NTFS נותנות מגוון רחב יותר של הרשאות מהרשאות Share, לכן נרצה לתת את ההרשאות הספציפיות דרך הרשאות NTFS.\n2. אם ניתן הרשאת NTFS FC ואז Share לההרשאות שנרצה, במידה ונתחבר מקומית לתיקייה ההרשאות שיחולו הן FC, דבר שהוא לא אבטחתי."]
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "CLASH",
+            "text": ["איזה הרשאה תחול?"],
+            "select": {
+                "questions": [
+                    ["NTFS Allow FC","NTFS Allow Modify"],
+                    ["Share Allow Read","Share Allow Change"]
+                ],
+                "followQuestion": ["NTFS Allow fc", "Share Allow Change"],
+                "correctAnswer": ["NTFS Allow FC", "Share Allow Change", "Share Allow Change"]
+            }
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "CLASH",
+            "text": ["איזה הרשאה תחול?"],
+            "select": {
+                "questions": [
+                    ["NTFS Allow fc","NTFS Deny fc"],
+                    ["Share Allow fc","Share Allow change"]
+                ],
+                "followQuestion": ["NTFS Deny fc", "Share Allow fc"],
+                "correctAnswer": ["NTFS Deny fc", "Share Allow fc", "NTFS Deny fc"]
+            }
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "CLASH",
+            "text": ["איזה הרשאה תחול?"],
+            "select": {
+                "questions": [
+                    ["NTFS Allow FC","NTFS Allow Modify"],
+                    ["Share Deny Change","Share Allow Read"]
+                ],
+                "followQuestion": ["NTFS Allow FC", "Share Deny Change"],
+                "correctAnswer": ["NTFS Allow FC", "Share Deny Change", "Share Deny Change"]
+            }
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "standType": "CLASH",
+            "text": ["המשתמש PermUser חבר גם בקבוצה GroupA וגם בקבוצה GroupB.\nהתסכלו על הרשאות ה-NTFS ואז על הרשאות ה-Share שעל תיקייה Folder, עבור GroupA וגם עבור GroupB."],
+            "rightClick": "clashPractice"
+        },
+        {
+            "name": "Practice",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "standType": "CLASH",
+            "text": ["לפי ההרשאות שעל תקייה Folder מהעמוד הקודם, מה תהיה ההרשאה הסופית של המשתמש?"],
+            "select": {
+                "questions": [
+                    ["Allow FC","Allow Modify", "Allow Change", "Allow Read"]
+                ],
+                "followQuestion": "",
+                "correctAnswer": ["Allow Change"]
+            }
+        },
+        {
+            "name": "Map",
+            "bgAnimations": ["carousel"],
+            "arrows": {
+                "back": true,
+                "front": true,
+                "type": "wood"
+            },
+            "text": ["מזל טוב!\nניווטתם בלונה פארק בהצלחה ולמדתם על כל סוגי ההרשאות ב-windows ועל השילוב ביניהן"]
+        },
+        {
+            "name": "Title",
+            "bgAnimations": ["ferrisWheel", "rollerCoaster"],
+            "arrows": {
+                "back": true,
+                "front": false,
+                "type": "wood"
+            },
+            "title": "End",
+            "text": ["ABOUT US", "RE-START"]
+        },
+        {
+            "name": "About",
+            "bgAnimations": [""],
+            "arrows": {
+                "back": false,
+                "front": false,
+                "type": "plain"
+            },
+            "text": ["צוות מאה: מולטימדיה ואינטראקטיביות בהדרכה.\nהצוות פועל ליצירת חווית למידה חדשנית שבמרכזה עומד הלומד. הקסם קורה בזכות אנשי הצוות שלא מתפשרים על איכות\nהתוצר והמולטימדיה, שמביאה איתה אין ספור\nהזדמנויות.","מאפיינת, גרפיקאית, מפתחת: רב”ט יעל חסקין", "מומחי תוכן:", "סמל דניאל קריסי,\n סמל מעיין אילון,\n סמל עומר ש,\nסמל בעז ק", "אנימטור: טוראי נועם בניטה"]
+        }
+    ]
+}

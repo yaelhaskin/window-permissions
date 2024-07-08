@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.41 42.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e9e8ee;
+        font-family: Margin-DEMO, 'Margin DEMO';
+        font-size: 33.3px;
+      }
+
+      .cls-2 {
+        fill: #3c153b;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #9390ad;
+        opacity: .8;
+      }
+    </style>
+  </defs>
+  <g id="arrows">
+    <g>
+      <g>
+        <polygon class="cls-2" points="118.39 0 18.43 .08 9.22 10.58 0 21.08 9.23 31.56 18.45 42.05 118.41 41.97 118.39 0"/>
+        <polygon class="cls-3" points="118.39 0 18.43 .08 9.22 10.58 0 21.08 9.23 31.56 18.45 42.05 118.41 41.97 118.39 0"/>
+      </g>
+      <text class="cls-1" transform="translate(32.76 31.4)"><tspan x="0" y="0">NEXT</tspan></text>
+    </g>
+  </g>
+</svg>

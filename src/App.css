@@ -1,0 +1,30 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  background-color: #3C153B;
+  color: #E9E8EF;
+
+  font-size: 1rem;
+  font-family: Rubik-Light;
+}
+
+p {
+  position: absolute;
+  font-size: 1.15rem;
+  white-space: break-spaces;
+  font-family: Rubik-Regular;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(../src/assets/fonts/Rubik/static/Rubik-Regular.ttf);
+  font-weight: 1 1000;
+}

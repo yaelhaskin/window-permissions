@@ -1,0 +1,118 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.whiteBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: scss.$white;
+    opacity: 70%;
+    z-index: 1;
+}
+
+.Menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    background-color: scss.$menu_dark_blue;
+    border-radius: 3%;
+    z-index: 2;
+
+    .ex {
+        width: 4%;
+        margin: 3%;
+        z-index: 2;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+        transition-property: width;
+
+        &:hover {
+            width: 5%;
+            transition: 0.3s;
+        }
+    }
+
+    .title {
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        font-family: scss.$Rubik_Bold;
+    }
+    
+    .bigContainer {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 81%;
+        display: flex;
+        
+        .subjectsContainer {
+            width: 28%;
+            margin: 5% 0;
+            text-align: center;
+            font-family: scss.$Rubik_Bold;
+            font-size: 1.9rem;
+            
+            .subject {
+                padding: 7%;
+                margin: 5% 0;
+                border-radius: 0 20px 20px 0;
+                text-align: center;
+
+                &:hover {
+                    font-size: 2.2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .listContainer {
+            width: 70%;
+            height: 98%;
+            background-color: scss.$stand_blue;
+            border-radius: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+                font-size: scss.$btn_small;
+                border: solid scss.$menu_dark_blue 5px;
+                border-radius: 15px;
+                background-color: scss.$menu_dark_blue;
+                width: 85%;
+                text-align: center;
+                padding:1vh 1vh;
+                transition: 0.3s;
+                transition-property: background-color;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: scss.$stand_blue;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .Menu {
+        width: 45%;
+    }
+}

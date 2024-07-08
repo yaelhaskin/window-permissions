@@ -1,0 +1,153 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.Stand {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    .title {
+        position: relative;
+        margin: 5px 0;
+        font-size: scss.$page_title;
+    }
+
+    .textContainerStand {
+        position: absolute;
+        top: 27%;
+        left: 25%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuStand {
+        position: absolute;
+        top: 63%;
+        left: 3%;
+        width: 8%;
+        
+        cursor: pointer;
+    }
+
+    .standTop {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 104%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signContainer {
+        align-self: flex-end;
+        width: 20%;
+        height: 50%;
+        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .pole {
+            width: 90%;
+        }
+        .standSign {
+            width: 100%;
+            background-color: scss.$stand_brown;
+            border-radius: 17px;
+    
+            font-family: scss.$Margin;
+            font-size: scss.$stand_sign;     
+            text-align: center;       
+            line-height: normal;    
+        }
+    }
+
+    .standBottom {
+        position: absolute;
+        bottom: -7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .littleArrow {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2vw;
+        height: 2vw;
+        border-top: solid 4px scss.$dark_purple;
+        border-right: solid 4px scss.$dark_purple;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .littleArrowBottom {
+        top: 80.5%;
+        transform: rotate(-45deg);
+        animation: scss.$littleArrowBottom 2s infinite linear;
+        z-index: 1;
+    }
+    .littleArrowTop {
+        top: 0%;
+        transform: rotate(135deg);
+        animation: scss.$littleArrowTop 2s infinite linear;
+    }
+
+    .exampleBtn {
+        position: absolute;
+        top: 57%;
+        left: 57.5%;
+        width: 12%;
+        height: 6%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        transition: width 1s, left 1s;
+        
+        z-index: 1;
+        
+
+        img {
+            height: 80%;
+        }
+        
+        .arrowLeft {
+            transform: rotate(180deg);
+        }
+
+        &:hover {
+            left: 56%;
+            width: 15%;
+        }
+    }
+}
+
+// מסך חדש
+@media screen and (min-width: 1900px) and (max-height: 1000px) {
+    .Stand {
+        .standTop {
+            top: -5%;
+        }
+        .standBottom {
+            bottom: -18%;
+        }
+        .menuStand {
+            top: 60%;
+            width: 6.5%;
+        }
+        .littleArrowTop {
+            border-color: scss.$light_purple
+        }
+    }
+}

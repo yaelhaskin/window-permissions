@@ -1,0 +1,78 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.About {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: scss.$light_purple;
+
+    p {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 0;
+        width: 8%;
+        margin: 1%;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .title {
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        font-family: scss.$Margin;
+        font-size: scss.$about_title;
+    }
+
+    .textContainer {
+        position: absolute;
+        top: 25%;
+        right: 8%;
+        width: 40%;
+        height: 80%;
+        z-index: 1;
+    }
+
+    .specialists {
+        display: flex;
+    }
+
+    .backArrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 5%;
+        padding: 0 1% ;
+        margin: 2% 0.5%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .carouselAniContainer {
+        position: absolute;
+        bottom: -40%;
+        left: -55%;
+        width: 170%;
+        height: 170%;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .About {
+        .logo {
+            width: 6%;
+        }
+        .carouselAniContainer {
+            bottom: -40%;
+            left: -55%;
+        }
+    }
+}

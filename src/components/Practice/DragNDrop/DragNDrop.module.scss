@@ -1,0 +1,99 @@
+@use '../../../scss/scss' as scss;
+
+.DragNDrop {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: scss.$Rubik_Regular;
+}
+
+.table {
+    width: 75%;
+    margin: 2%;
+    table-layout: fixed;
+    
+    border-collapse: collapse;
+    tbody {
+        tr {
+            td {
+                border-right: solid scss.$light_purple;
+            }
+            td:nth-child(2) {
+                border-right: none;
+            }
+            
+            .name {
+                border: none;
+                padding-left: 2%;
+                font-size: scss.$btn_small;
+                font-family: scss.$Rubik_Bold;
+            }
+        }
+    }
+}
+
+.dropContainerName{
+    border-bottom: solid scss.$light_purple;
+    font-size: scss.$practice_small;
+    text-align: center;
+}
+
+.dropContainer {
+    min-height: 20vh;
+}
+
+.termsStartContainer {
+    border: 4px solid scss.$light_purple;
+    border-radius: 15px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.term {
+    padding: 3%;
+    text-align: center;
+    cursor: grab;
+    z-index: 1;
+}
+
+.isOver {
+    border: solid 2px scss.$light_purple;
+    border-radius: 15px;
+}
+
+.checkBtn {
+    width: 15%;
+    height: 6%;
+    margin: 3%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    transition: width 0.7s;
+    
+    z-index: 4;
+    
+    .checkBtnText {
+        width: 65%;
+    }
+    
+    img {
+        width: 10%;
+    }
+    
+    .arrowLeft {
+        transform: rotate(180deg);
+    }
+
+    &:hover {
+        width: 17%;
+    }
+}

@@ -1,0 +1,152 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.Practice {
+    .menuCloud {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10%;
+        margin: 1.3%;
+        z-index: 1;
+
+        cursor: pointer;
+    }
+
+    .titleCloud {
+        position: absolute;
+        top: 7%;
+        right: 10%;
+        width: 18%;
+    }
+
+    .banner {
+        position: absolute;
+        top: -1%;
+        right: 0;
+        width: 100%;
+        opacity: 40%;
+    }
+
+    p {
+        font-size: scss.$btn_small;
+    }
+    
+    .textRegular {
+        position: relative;
+        text-align: center;
+    }
+    .textRightClick {
+        position: absolute;
+        top: 22%;
+        right: 10%;
+        width: 40%;
+    }
+
+    .question {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bigNTFS {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bigCLASH {
+        flex-wrap: wrap;
+    }
+
+    .MultiChoise {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .selectContainer {
+            margin: 2%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: scss.$practice_small;
+    
+            span {
+                width: 10%;
+                text-align: center;
+            }
+        }
+        .selectNTFS {
+            width: 45%;
+        }
+        .selectCLASH {
+            width: 40%;
+        }
+        .arrows {
+            width: 50%;
+        }
+        
+        .select {
+            width: 70%;
+            padding: 3%;
+            margin: 0 5%;
+            border: solid 3px scss.$light_purple;
+            border-radius: 20px;
+            font-family: scss.$Rubik_Regular;
+            text-align: center;
+            transition: 0.3s;
+            transition-property: background-color;
+    
+            cursor: pointer;
+    
+            &:hover {
+                background-color: scss.$light_purple;
+                color: scss.$bg_purple;
+            }
+        }
+    
+        .selectMulti {
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    
+            div {
+                width: auto;
+                margin: 2% 5%;
+            }
+        }
+    
+        .cornerLine {
+            width: 50%;
+            padding-bottom: 10%;
+        }
+    
+        .cornerLineLeft {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .Practice {
+        .menuCloud {
+            width: 7%;
+        }
+        .titleCloud {
+            width: 14%;
+        }
+        .banner {
+            top: -5%;
+        }
+    }
+}

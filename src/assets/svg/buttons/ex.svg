@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.8 28.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e9e8ee;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="menu_open" data-name="menu open">
+    <g>
+      <line class="cls-1" x1="26.8" y1="2" x2="2" y2="26.8"/>
+      <line class="cls-1" x1="2" y1="2" x2="26.8" y2="26.8"/>
+    </g>
+  </g>
+</svg>

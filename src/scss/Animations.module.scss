@@ -1,0 +1,26 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.Animations {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+    .text0 {
+        top: 10%;
+        right: 10%;
+        width: 50%;
+    }
+
+    .text1 {
+        top: 87%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        text-align: center;
+    }
+}

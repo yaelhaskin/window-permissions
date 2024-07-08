@@ -1,0 +1,163 @@
+{
+    "menuContent": {
+        "subjects": ["NTFS", "SHARE", "התנגשות הרשאות"],
+        "list": {
+            "NTFS": [
+                    {"text": "הסבר כללי", "page": 8}, 
+                    {"text": "סוגי הרשאות", "page": 9}, 
+                    {"text": "מצבי הרשאות", "page": 10}, 
+                    {"text": "ירושת הרשאות", "page": 12}, 
+                    {"text": "כפיית הורשה", "page": 16}, 
+                    {"text": "קריאת הרשאות", "page": 17}, 
+                    {"text": "בעלות", "page": 20}
+                ],
+            "SHARE": [
+                    {"text": "הסבר כללי", "page": 26}, 
+                    {"text": "סוגי הרשאות", "page": 28}, 
+                    {"text": "יצירה וגישה לשיתוף", "page": 29}, 
+                    {"text": "ירושת הרשאות", "page": 30}, 
+                    {"text": "שיתוף חבוי ואדמיניסטרטיבי", "page": 32}
+                ],
+            "התנגשות הרשאות": [
+                    {"text": "השוואת הרשאות", "page": 35}, 
+                    {"text": "הסבר כללי", "page": 36}, 
+                    {"text": "סדר הרשאות", "page": 37}, 
+                    {"text": "שילוב הרשאות", "page": 38}, 
+                    {"text": "עבודה נכונה", "page": 39}
+                ]
+        }
+    }, 
+    "dnd": {
+        "columns": ["List", "Read", "Read&Execute", "Write", "Modify", "Full Control"],
+        "על קובץ:": {
+            "terms": [
+                {"term": "לקרא את הקובץ", "correctAnswer": ["Read", "Read&Execute", "Modify", "Full Control"]}, 
+                {"term": "להריץ קבצי הרצה", "correctAnswer": ["Read&Execute", "Modify", "Full Control"]},
+                {"term": "לכתוב מחדש על קבצים קיימים", "correctAnswer": ["Write", "Modify", "Full Control"]},
+                {"term": "למחוק קבצים", "correctAnswer": ["Modify", "Full Control"]},
+                {"term": "לשנות הרשאות", "correctAnswer": ["Full Control"]},
+                {"term": "לקחת בעלות", "correctAnswer": ["Full Control"]}
+            ],
+            "final": [
+                {"column": "List", "elements": ["-"]}, 
+                {"column": "Read", "elements": ["לקרא את הקובץ"]},
+                {"column": "Read&Execute", "elements": ["לקרא את הקובץ", "להריץ קבצי הרצה"]},
+                {"column": "Write", "elements": ["לכתוב מחדש על קבצים קיימים"]},
+                {"column": "Modify", "elements": ["לקרא את הקובץ", "להריץ קבצי הרצה", "לכתוב מחדש על קבצים קיימים", "למחוק קבצים"]},
+                {"column": "Full Control", "elements": ["לקרא את הקובץ", "להריץ קבצי הרצה", "לכתוב מחדש על קבצים קיימים", "למחוק קבצים", "לשנות הרשאות", "לקחת בעלות"]}
+            ]
+        },
+        "על תקייה:": { 
+            "terms": [
+                {"term": "לצפות בשמות הקבצים והתיקיות", "correctAnswer": ["List", "Read", "Read&Execute", "Modify", "Full Control"]}, 
+                {"term": "לקרא ולעיין בכל הקבצים והתיקיות", "correctAnswer": ["Read", "Read&Execute", "Modify", "Full Control"]}, 
+                {"term": "להריץ קבצי הרצה", "correctAnswer": ["Read&Execute", "Modify", "Full Control"]},
+                {"term": "ליצור קבצים ותיקיות", "correctAnswer": ["Write", "Modify", "Full Control"]},
+                {"term": "לשנות מאפיינים", "correctAnswer": ["Write", "Modify", "Full Control"]},
+                {"term": "למחוק קבצים ואת התקייה", "correctAnswer": ["Modify", "Full Control"]},
+                {"term": "לשנות הרשאות", "correctAnswer": ["Full Control"]},
+                {"term": "לקחת בעלות", "correctAnswer": ["Full Control"]}
+            ],
+            "final": [
+                {"column": "List", "elements": ["לצפות בשמות הקבצים והתיקיות"]}, 
+                {"column": "Read", "elements": ["לצפות בשמות הקבצים והתיקיות", "לקרא ולעיין בכל הקבצים והתיקיות"]},
+                {"column": "Read&Execute", "elements": ["לצפות בשמות הקבצים והתיקיות", "לקרא ולעיין בכל הקבצים והתיקיות", "להריץ קבצי הרצה"]},
+                {"column": "Write", "elements": ["ליצור קבצים ותיקיות", "לשנות מאפיינים"]},
+                {"column": "Modify", "elements": ["לצפות בשמות הקבצים והתיקיות", "לקרא ולעיין בכל הקבצים והתיקיות", "להריץ קבצי הרצה", "ליצור קבצים ותיקיות", "לשנות מאפיינים", "למחוק קבצים ואת התקייה"]},
+                {"column": "Full Control", "elements": ["לצפות בשמות הקבצים והתיקיות", "לקרא ולעיין בכל הקבצים והתיקיות", "להריץ קבצי הרצה", "ליצור קבצים ותיקיות", "לשנות מאפיינים", "למחוק קבצים ואת התקייה", "לשנות הרשאות", "לקחת בעלות"]}
+            ]
+        } 
+    },
+    "pop-up": {
+        "permission-types": {
+            "title": "סוגי הרשאות",
+            "buttons": ["List", "Read", "Read&Execute", "Write", "Modify", "Full Control"],
+            "plainText": 
+            [{
+                "type": "קובץ",
+                "text": [
+                            "לקרא את הקובץ \nוהמאפיינים שלו", 
+                            "להריץ \nקבצי הרצה", 
+                            "לכתוב מחדש \nאת התוכן", 
+                            "לקחת \nבעלות",
+                            "לשנות \nהרשאות",
+                            "למחוק \nאת הקובץ" 
+                        ]
+            }, 
+            {
+                "type": "תקייה",
+                "text": [
+                            "לצפות בשמות \nהקבצים והתיקיות", 
+                            "לקרא ולעיין \nבכל הקבצים והתיקיות", 
+                            "להריץ \nקבצי הרצה", 
+                            "ליצור \nקבצים ותיקיות", 
+                            "לקחת \nבעלות",
+                            "לשנות \nהרשאות", 
+                            "למחוק קבצים \nואת התקייה", 
+                            "לשנות \nמאפיינים"
+                        ]
+            }],
+            "btnColors": {
+                "List": "#682668",
+                "Read": "#B946BC",
+                "Read&Execute": "#BD7EC1",
+                "Write": "#8B80E8",
+                "Modify": "#EB5270",
+                "Full Control": "#B76F5E"
+            }
+        },
+        "readOrder": "readOrder",
+        "copyAndMove": "copyAndMove"
+    },
+    "examples": {
+        "ntfsInheritance": {
+            "title": "ntfsInheritance",
+            "text": [
+                "לחצו קליק ימני על התקייה Folder,\n ולאחר מכן על ה- Properties.\nכנסו לתוך ה- Security.\nראו את ההרשאות שחלות על התקייה.", 
+                "עכשיו כנסו אל תקייה Folder (בעזרת קליק כפול על התקייה).\n\nלחצו קליק ימני על הקובץ File, ולאחר מכן על ה- Properties.\nכנסו לתוך ה- Security.\nראו את ההרשאות שחלות על הקובץ.\n", 
+                "ניתן לראות שכל ההרשאות שחלות על קובץ File\n מורשות אליו מתקייה Folder, וקיימות גם על התקייה."
+            ]
+        },
+        "ntfsInheritanceRemove": {
+            "title": "ntfsRemoveInheritance",
+            "text": [
+                "תנו על התיקייה Folder1 הרשאות Allow write ל- users:\nלחצו קליק ימני על התיקייה, היכנסו ל:\n Properties -> Security -> Edit.\n\nסמנו את האפשרות של Allow write ולאחר מכן לחצו על Apply.",
+                "כעת נצפה בהרשאות של התיקייה Folder2 תחת Folder1.\n\nהיכנסו אל Folder1 בעזרת דאבל קליק.\nלחצו עם קליק ימני על התיקייה Folder2 \nהגיעו אל Properties -> Security.",
+                "ניתן לראות שההרשאות מופיעות עם וי אפור, מה שמעיד על כך\nשהן מורשות מתיקיית האב ולא ניתן לשנות אותן כמו שביצענו \nקודם לכן, לשם כך נבטל את ירושת ההרשאות על התיקייה.\n\nלחצו על Advanced, ולאחר מכן בחלון שיעלה לחצו על\n Disable Inheritance. בחרו באופציה הראשונה של Convert.\n",
+                "כעת ניתן לראות שההרשאות הקיימות על התיקייה \nכבר לא נחשבות מורשות וניתן לשנות אותן בקלות.",
+                "לסיום נבחן את האופציה הנוספת עבור ביטול ירושה.\nב-Folder3, כנסו אל properties -> security -> advanced.\nלחצו על האופציה של Disable inheritance.\n\nהפעם לחצו על האופציה השנייה של Remove,\nלאחר מכן לחצו על Apply. לחצו על Yes.\nניתן לראות שעל התיקייה אין הרשאות בכלל."
+            ]
+        },
+        "effectivePermissions": {
+            "title": "effectivePermissions",
+            "text": [
+                "משתמש PermUser הוא חבר גם בקבוצה Strong_Group \nוגם בקבוצה Weak_Group, לכל אחת יש הרשאות שונות \nעל התיקייה Folder. נשתמש בEffective Permissions\n כדי לראות אילו הרשאות יהיו לPermUser על התיקייה. \n\nלחצו קליק ימני על התיקייה ולאחר מכן: \nProperties -> Security -> Advanced -> Effective Access.",
+                "כעת לחצו על select a user, נדלג בדוגמה זו על הבחירה \nעצמה של המשתמש, אך ניתן לראות שכעת המשתמש הנבחר \nהוא PermUser. \nכעת לחצו על View effective access, ניתן לראות רשימה \nשל כלל ההרשאות שיש למשתמש על התיקייה."
+            ]
+        },
+        "ntfsPractice": {
+            "title": "ntfsPractice",
+            "text": [],
+            "correctAnswer": [
+                { "name": "FC", "bool": false },
+                { "name": "Modify", "bool": false },
+                { "name": "ReadExecute", "bool": false },
+                { "name": "Read", "bool": true },
+                { "name": "Write", "bool": true}
+            ]
+        },
+        "sharePractice": {
+            "title": "sharePractice",
+            "text": [],
+            "correctAnswer": [
+                { "name": "FC", "bool": false },
+                { "name": "Change", "bool": true },
+                { "name": "Read", "bool": true }
+            ]
+        },
+        "clashPractice": {
+            "title": "clashPractice",
+            "text": []
+        }
+    }
+}

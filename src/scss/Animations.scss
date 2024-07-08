@@ -1,0 +1,31 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+}
+
+.lf-player-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lf-player-controls {
+    background-color: transparent !important;
+}
+ 
+.lf-player-btn {
+    fill: scss.$white !important;
+    transform: scale(8);
+    z-index: 10;
+}
+ 
+#track {
+    display: none;
+}

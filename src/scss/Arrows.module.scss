@@ -1,0 +1,30 @@
+@use './scss' as scss;
+
+* {
+    overflow: hidden;
+    direction: rtl;
+}
+
+.Arrows {
+    img {
+        position: absolute;
+        width: 12%;
+        height: 12%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .backArrow {
+        bottom: 0;
+        right: 0;
+    }
+    .frontArrow {
+        bottom: 0;
+        left: 0;
+    }
+
+    .plain {
+        width: 9%;
+        margin: 0% 1.6%;
+    }
+}

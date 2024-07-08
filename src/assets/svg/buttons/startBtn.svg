@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.1 65.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b153a;
+        font-family: Margin-DEMO, 'Margin DEMO';
+        font-size: 42px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        fill: #9390ad;
+      }
+
+      .cls-4 {
+        letter-spacing: -.13em;
+      }
+    </style>
+  </defs>
+  <g id="arrows">
+    <g>
+      <polygon class="cls-3" points="175.1 32.64 161.07 16.32 147.03 0 147.03 0 28.08 0 28.08 0 14.04 16.32 0 32.64 14.04 48.96 28.08 65.28 28.08 65.28 28.08 65.28 28.08 65.28 28.08 65.28 147.03 65.28 147.03 65.28 147.03 65.28 147.03 65.28 147.03 65.28 161.07 48.96 175.1 32.64"/>
+      <text class="cls-1" transform="translate(33.1 46.36)"><tspan x="0" y="0">S</tspan><tspan class="cls-4" x="20.71" y="0">T</tspan><tspan x="38.89" y="0">A</tspan><tspan class="cls-2" x="65.86" y="0">R</tspan><tspan x="85.05" y="0">T</tspan></text>
+    </g>
+  </g>
+</svg>
